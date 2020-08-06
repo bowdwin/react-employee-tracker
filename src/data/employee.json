@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "role": "CIO",
+    "name": "Jon Bonjovi",
+    "email": "jon@gmail.com",
+    "officeNumber": 1
+  },
+  {
+    "id": 2,
+    "role": "Sr Director",
+    "name": "Jon Bonjovi jr",
+    "email": "jonjr@gmail.com",
+    "officeNumber": 1
+  },
+  {
+    "id": 3,
+    "role": "Director",
+    "name": "Mike Kline",
+    "email": "mike@gmail.com",
+    "officeNumber": 1
+  },
+  {
+    "id": 4,
+    "role": "Manager",
+    "name": "Mergim Mift",
+    "email": "mergim@gmail.com",
+    "officeNumber": 1
+  },
+  {
+    "id": 5,
+    "role": "Solutions Engineer",
+    "name": "Jim Corry",
+    "email": "jim@gmail.com",
+    "officeNumber": 1
+  },
+  {
+    "id": 6,
+    "role": "Princ Soft Eng",
+    "name": "Keith Boomshaklaka",
+    "email": "keith@gmail.com",
+    "officeNumber": 1
+  },
+  {
+    "id": 7,
+    "role": "Sr Soft Eng",
+    "name": "Mike Pramis",
+    "email": "mikep@gmail.com",
+    "officeNumber": 1
+  },
+  {
+    "id": 8,
+    "role": "Soft Eng",
+    "name": "Mike Nosos",
+    "email": "mnosos@gmail.com",
+    "officeNumber": 3
+  },
+  {
+    "id": 9,
+    "role": "Soft Eng",
+    "name": "Karen Boutia",
+    "email": "karen@gmail.com",
+    "officeNumber": 4
+  }
+  {
+    "id": 10,
+    "role": "Soft Eng",
+    "name": "Paul Rivere",
+    "email": "paulr@gmail.com",
+    "officeNumber": 3
+  }
+]

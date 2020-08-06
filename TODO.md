@@ -15,6 +15,7 @@ as a `user` i want to be able to view my entire `employee directory` at once s t
 - Header
 - Filter
 - Table
+
   - Properties ( use table headr)
   - Data (User Records)
 
