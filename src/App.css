@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.table {
+  color: white;
+  background-color: rgb(160, 160, 179);
+}
