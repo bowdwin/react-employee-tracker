@@ -1,8 +1,18 @@
+// https://github.com/tannerlinsley/react-table github for react table,
+// followed some examples in there
 import React, { useState } from 'react';
+// destructure react-table to use 3 functions
 import { useTable, useSortBy, useFilters } from 'react-table';
 import data from './data/data.json';
+import MaUTable from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
 
 // assign accessor to the column title from data
+// header is what is displayed on the page
+// accessor property is property name thats in data.json
 const columns = [
   {
     Header: 'Employee Directory',
@@ -33,7 +43,9 @@ const columns = [
 
 // destructure columns and data from props
 const Table = ({ columns, data }) => {
+  // sets variables to useSate on change
   const [filterInput, setFilterInput] = useState('');
+  // declares
   const {
     getTableProps,
     getTableBodyProps,
@@ -51,8 +63,9 @@ const Table = ({ columns, data }) => {
     useSortBy
   );
 
-  const handleFilterChange = (e) => {
-    const value = e.target.value || undefined;
+  // function that will filter based off of the name
+  const handleFilterChange = (event) => {
+    const value = event.target.value;
     setFilter('name', value);
     setFilterInput(value);
   };
@@ -62,14 +75,17 @@ const Table = ({ columns, data }) => {
       <input
         value={filterInput}
         onChange={handleFilterChange}
-        placeholder={'Search name'}
+        placeholder={'Search by Name'}
       />
-      <table {...getTableProps()}>
-        <thead>
+      {/* // use material UI to style table and map over header */}
+      <MaUTable {...getTableProps()}>
+        <TableHead>
           {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
+            <TableRow {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                <TableCell
+                  {...column.getHeaderProps(column.getSortByToggleProps())}
+                >
                   {column.render('Header')}
                   <span>
                     {column.isSorted
@@ -78,26 +94,28 @@ const Table = ({ columns, data }) => {
                         : ' 🔼'
                       : ''}
                   </span>
-                </th>
+                </TableCell>
               ))}
-            </tr>
+            </TableRow>
           ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
+        </TableHead>
+        <TableBody {...getTableBodyProps()}>
           {rows.map((row, i) => {
             prepareRow(row);
             return (
-              <tr {...row.getRowProps()}>
+              <TableRow {...row.getRowProps()}>
                 {row.cells.map((cell) => {
                   return (
-                    <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                    <TableCell {...cell.getCellProps()}>
+                      {cell.render('Cell')}
+                    </TableCell>
                   );
                 })}
-              </tr>
+              </TableRow>
             );
           })}
-        </tbody>
-      </table>
+        </TableBody>
+      </MaUTable>
     </>
   );
 };
