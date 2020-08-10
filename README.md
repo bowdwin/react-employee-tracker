@@ -1,68 +1,48 @@
+# React Employee Search
+
 https://bowdwin.github.io/react-employee-tracker/
 
-## Available Scripts
+Track your Fitness!
 
-In the project directory, you can run:
+# Table Of Contents:
 
-### `npm start`
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Technologies](#Technologies)
+- [Contributors](#Contributors)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## GIF shot Fitness Tracker!
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![](./public/employeeGIF.gif)
 
-### `npm test`
+# Description:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Uses a json file to pull in employee data, and you an sort it using react-table
 
-### `npm run build`
+# Installation:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The repository is set up , you will need to run npm init -y and npm install in order to install NPM packages .
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Once the packages are installed you can start the server by typing node server file or by using nodemon.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application can be run either on local port by accessing http://localhost:3000 which is connected to your local Mongo database or by running the app deployed in Heroku that is connected to a Mongo Database.
 
-### `npm run eject`
+# Usage:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    1. Page loads, you can sort by clicking the header of a column
+    2. You can search name by enter a name
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Technologies-
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Front-End Technologies:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    - HTML 5 is used to create a polished front-end.
+    - CSS : For styling the HTML pages.
+    - Javascript: This application conforms to the ECMA script specification.
+    - react-table to help build the table and display the information
+    - materialUI package to help the look of the table
 
-## Learn More
+# Contributors:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    - Keith Beaudoin
